@@ -1,0 +1,146 @@
+:root{
+  --weirdBlue: #0588A0;
+  --notQuiteBlack: #3A414D;
+  --notQuiteWhite: #CECECE;
+}
+.conva{
+  width: 800px;
+  margin: auto;
+}
+.conva .articles_header{
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  color: var(--notQuiteBlack);
+}
+.conva h1{
+  font-size: 42px;
+  font-weight: 800;
+  text-align: left;
+  color: var(--notQuiteBlack);
+}
+.card_full{
+  display: grid;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.card_full .post_btn{
+  padding: 10px 20px;
+  background-color: var(--weirdBlue);
+  width: fit-content;
+  color: var(--notQuiteWhite);
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 17px;
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.46);
+}
+.card_full .post_title{
+/* font-size: 38px; */
+font-weight: 800;
+
+
+}
+.card_full .post_body{
+  font-size: 22px;
+
+
+  
+  }
+
+.sub_container{
+  /* width: 1000px; */
+  height: 470px;
+  margin: auto auto;
+  /* overflow:hidden; */
+  /* max-width: 800px; */
+  /* width: 600px; */
+
+}
+.maincard_c{
+  /* width: 800px; */
+  
+   display: grid;
+   /* flex-wrap: nowrap; */
+    grid-template-columns: 1fr 1fr ;
+    gap: 15px 15px;
+    grid-template-areas:
+      "Main-row Top-right"
+      "Main-row lower-row";
+      padding-top: 20px;
+      scroll-snap-type: both mandatory;
+	scroll-padding: 1rem;
+  
+  }
+
+
+
+/* .fullmainrap{
+display: flex;
+flex-wrap: nowrap;
+
+
+
+} */
+.cardId {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius:25px ;
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.46);
+  background-position: center top;
+  display: flex;
+  padding: 25px;
+  /* background:linear-gradient(359deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)50%); */
+
+}
+
+
+.cardId .post_categories {
+  color:var(--weirdBlue);
+  font-size: 16px;
+}
+.card-body{
+  align-self: flex-end;
+
+}
+.cardId2 .card-body, .cardId5 .card-body{
+text-align: left;
+}
+.post_title{
+  font-size: 28px;
+  color:var(--notQuiteWhite) ;
+  margin: 0px;
+
+}
+.card-text{
+  color: white;
+  
+}
+.card-text svg{
+
+  margin-right: 5px;  
+  vertical-align: middle;
+  
+  }
+  .card-text svg:after{
+
+    padding-right: 15px;  
+    margin-right: 10px;
+    }
+
+
+    .active {
+      scroll-snap-type: unset;
+    }
+    
+    li {
+      scroll-snap-align: center;
+      display: inline-block;
+      border-radius: 3px;
+      font-size: 0;
+    }
+   
+/* .sub_container .maincard_c{
+  transform: scale(0.5);
+  transform-origin: 0 0;
+} */
